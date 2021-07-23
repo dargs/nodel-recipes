@@ -8,6 +8,13 @@
 #   Uses the 'request_queue' from the toolkit to manually handle any packet fragmentation that is possible with
 #   MODBUS' length-delimeted packetised stream over TCP. This is very unlikely when direct from Advantech MODBUS hardware
 #   but possible when port-forwarding.
+#
+# 
+# example to use within a custom.py:
+#
+#    lookup_local_action('Relay1State').call(False)
+#    lookup_local_action('Relay2State').call(True)
+#
 
 TCP_PORT = 502
 
